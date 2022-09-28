@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini Projects: Color Flipper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/71dc5f8d27.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/vendor.js" defer>
+    </script>
+    <script src="assets/scripts/app.js" defer>
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../static/resources/raulmayalogo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+          Mini Projects
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          </ul>
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">GitHub  <i class='fab fa-github'></i></a></li>
+                      <li><a class="dropdown-item" href="#">LinkedIn  <i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="dropdown-item" href="#">Email  <i class="fa-regular fa-envelope"></i></a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+        <h4>The Color Flipper</h4>
+    </header>
+
+    <div class="container">
+        <div class="child">
+            <h2>Background Color: <span id="background-color">White</span></h2>
+            <button id="btn-primary" type="button" class="btn btn-primary">HEX Color</button>
+            <button id="btn-secondary" type="button" class="btn btn-secondary">RGB Color</button>
+            <button id="btn-success" type="button" class="btn btn-success">STR Color</button>
+        </div>
+    </div>
+
+
+  </body>
+</html>
