@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
@@ -42,6 +43,7 @@
   }
 }
 .scrolling-image-container {
+    font-family: 'Source Sans Pro', sans-serif;
     min-height: 100vh;
     text-align: center;
     background: url("BG_PL.png") repeat 0 0;
@@ -57,9 +59,8 @@
 
 
 h1 {
-    padding-top: 2rem;
     color: aliceblue;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 h3 {
@@ -71,10 +72,17 @@ h3 {
     background-color: azure;
     height: 2.5rem;
     padding: 0.25rem;
-    margin: 0.5rem;
+    margin: 1rem;
     width: 90%;
     display: flex;
     font-size: large;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+
+.game:hover {
+    background-color: rgb(235, 203, 255);
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    
 }
 
 .col {
@@ -99,4 +107,17 @@ h3 {
     align-items: center;
     padding-left: 20px;
     gap: 12px;
+}
+
+
+.hashtag {
+    margin-top: 2rem;
+}
+
+.row {
+    align-items: center;
+}
+
+#main_title, #main_image {
+    margin-top: 1rem;
 }
