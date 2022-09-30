@@ -63,61 +63,68 @@ h1 {
     font-weight: bolder;
 }
 
-h3 {
-    color: aliceblue;
-    margin-bottom: 2rem;
+#date {
+  color: aliceblue;
+  margin-bottom: 2rem;
 }
 
-.game {
-    background-color: azure;
-    height: 2.5rem;
-    padding: 0.25rem;
-    margin: 1rem;
-    width: 90%;
-    display: flex;
-    font-size: large;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+.container a {
+  text-decoration: none;
+  color: #37003c;
+  height: 2.5rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  width: 90%;
+  background-color: azure;
+  display: flex;
+  font-size: large;
+
 }
 
-.game:hover {
-    background-color: rgb(235, 203, 255);
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    
+
+.container a:hover {
+  background: linear-gradient(270deg,#ff2882,#963cff 45%);
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 25px white;
+  border-color: rgb(183, 50, 255);
 }
 
 .col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
-    gap: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  gap: 12px;
 }
 
 .visit {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-    gap: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  gap: 12px;
 }
 
 
 .hashtag {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  color: aliceblue;
 }
 
 .row {
-    align-items: center;
+  align-items: center;
 }
 
 #main_title, #main_image {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
