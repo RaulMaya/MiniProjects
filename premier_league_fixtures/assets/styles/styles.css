@@ -44,7 +44,7 @@
 }
 .scrolling-image-container {
     font-family: 'Source Sans Pro', sans-serif;
-    min-height: 100vh;
+    min-height: fit-content;
     text-align: center;
     background: url("BG_PL.png") repeat 0 0;
     -webkit-animation: bg-scrolling-reverse 12s infinite;
