@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini Projects: Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/71dc5f8d27.js" crossorigin="anonymous"></script>
+    <script src="static/app.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../static/resources/raulmayalogo.png" alt="Logo" width="32" height="29" class="d-inline-block align-text-top">
+          Mini Projects
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          </ul>
+          <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">GitHub  <i class='fab fa-github'></i></a></li>
+                      <li><a class="dropdown-item" href="#">LinkedIn  <i class="fa-brands fa-linkedin-in"></i></a></li>
+                      <li><a class="dropdown-item" href="#">Email  <i class="fa-regular fa-envelope"></i></a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="child">
+            <h2>Counter</h2>
+            <h1 id="counting">0</h1>
+            <button id="increase"><i class="fa-solid fa-arrow-up"></i></button>
+            <button id="reset"><i class="fa-solid fa-rotate-left"></i></button>
+            <button id="decrease"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+  </body>
+</html>
