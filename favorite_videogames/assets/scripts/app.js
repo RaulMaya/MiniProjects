@@ -87,8 +87,20 @@ const renderMovie = (id, title, devs, rDate, image, rating) => {
             <h2><b>Title: </b>${title}</h2>
             <h4><b>Developers: ${devs}</b></h4>
             <h4><b>Release Date: ${rDate}</b></h4>
-            <p>${rating}/5 stars</p>
+            <p>${rating}/10 stars</p>
         </div>`;
+    const theRating = newMovieElement.querySelector('p');
+    if (+rating === 10) {
+        theRating.classList.add('excellent');
+    } else if (+rating >= 8 && +rating < 10) {
+        theRating.classList.add('good');
+    } else if (+rating >= 6 && +rating < 8) {
+        theRating.classList.add('regular');
+    } else if (+rating >= 4 && +rating < 6) {
+        theRating.classList.add('bad');
+    } else if (+rating >= 0 && +rating < 4) {
+        theRating.classList.add('horrible');
+    }
     newMovieElement.addEventListener('click', deleteMovieHandler.bind(null, id))
     const list = document.getElementById('movie-list');
     list.appendChild(newMovieElement);
@@ -145,7 +157,7 @@ const addMovieHandler = () => {
                 } else if (
                     +ratingVal < 1 ||
                     +ratingVal > 5 ) {
-                        alert('The rating scale is from 1 to 5.');
+                        alert('The rating scale is from 1 to 10.');
                         return;
                         }
         }

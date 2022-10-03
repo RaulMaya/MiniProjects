@@ -184,9 +184,29 @@ input:focus {
 .movie-element p {
   color: white;
   display: inline;
-  background: #f67722;
+
   padding: 0.25rem 1rem;
   border-radius: 15px;
+}
+
+.excellent {
+  background: #008f15;
+}
+
+.good {
+  background: #00c803;
+}
+
+.regular {
+  background: #f67722;
+}
+
+.bad {
+  background: #f62222;
+}
+
+.horrible {
+  background: #be0000;
 }
 
 .movie-element__image {
