@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="https://kit.fontawesome.com/71dc5f8d27.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+      <div class="modal__content">
+        <label for="title">Video Game Title</label>
+        <input type="text" name="title" id="title" />
+        <label for="title">Video Game Developers</label>
+        <input type="text" name="devs" id="devs" />
+        <label for="title">Release Date</label>
+        <input type="date" name="release" id="release" />
+        <label for="image-url">Image URL</label>
+        <input type="text" name="image-url" id="image-url" />
+        <label for="rating">Your Rating (1-10)</label>
+        <input
+          type="number"
+          step="1"
+          max="10"
+          min="1"
+          name="rating"
+          id="rating"
+        />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
+    <div class="modal" id="delete-modal">
+      <h2 class="modal__title">Are you sure?</h2>
+      <p class="modal__content">
+        Are you sure you want to delete this item? This action can't be made
+        undone!
+      </p>
+      <div class="modal__actions">
+        <button class="btn btn--passive">No (Cancel)</button>
+        <button class="btn btn--danger">Yes</button>
+      </div>
+    </div>
+
+    <header>
+        <div class="wrapper">
+            <img src="assets/styles/PS5 Control.png" width="50">
+            <h1>Favorite Video Games</h1>
+        </div>
+      <button id="addMovie"><i class="fa-sharp fa-solid fa-plus"></i> <i class="fa-solid fa-gamepad"></i></button>
+    </header>
+    
+
+
+    <main>
+      <section id="entry-text" class="card">
+        <p>Your personal videogames database!</p>
+      </section>
+      <ul id="movie-list"></ul>
+    </main>
+
+    <div class='box'>
+      <div class='wave -one'></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+    </div>
+
+    
+  </body>
+</html>
