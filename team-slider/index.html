@@ -14,60 +14,60 @@
 <body>
     <ul>
         <li class="visible">
-            <div class="container">
+            <div id="bayern-munich" class="container bayern-container">
                 <div class="row">
                     <div class="col col-9">
                         <div class="wrapper">
-                            <img id="club-logo" src="assets/images/BayernLogo.png" width="37" height="30" alt="bayern">
-                            <h4 id="team-title">FC BAYERN MÜNCHEN</h4>
+                            <img id="club-logo" class="bayern-logo" src="assets/images/BayernLogo.png" alt="bayern">
+                            <h4 id="team-title" class="bayern-title">FC BAYERN MÜNCHEN</h4>
                         </div>
                         <div class="row">
-                            <div class="col col-6" id="first">
-                                <b><p>Main Stats<p></b>
-                                <p>Foundation: 27 February 1900</p>
-                                <p>President: Herbert Hainer</p>
-                                <p>CEO: Oliver Kahn</p>
-                                <p>Head Coach: Julian Nagelsmann</p>
-                                <p>League:  <img src="assets/images/bundesliga.png" width="15" height="12" alt="bundesliga"></p>
-                                <p>Colors: <i class="fa-solid fa-square"></i> <i class="fa-solid fa-square"></i></p><br>
+                            <div class="col col-7">
+                                <b><p>Club Information<p></b>
+                                <p>Foundation: <b>27 February 1900</b></p>
+                                <p>President: <b>Herbert Hainer</b></p>
+                                <p>CEO: <b>Oliver Kahn</b></p>
+                                <p>Head Coach: <b>Julian Nagelsmann</b></p>
+                                <p>Competition:  <img src="assets/images/bundesliga.png" width="15" height="18" alt="bundesliga"></p>
+                                <p>Colors: <i class="fa-solid fa-square first-color"></i> <i class="fa-solid fa-square second-color"></i></p><br>
                                 
                                 <b><p>Club Record Breakers<p></b>
                                 <div class="wrapper">
-                                    <img src="assets/images/Ball.png" width="25" height="23" alt="bayern">
-                                    <p>Gerd Müller (563 goals)</p>
+                                    <img class="record" src="assets/images/Ball.png" alt="Scorer">
+                                    <p class="club-legend">Gerd Müller <b>(563 goals)</b></p>
                                 </div>
                                 <div class="wrapper">
-                                    <img src="assets/images/Gloves.png" width="25" height="23" alt="bayern">
-                                    <p>Manuel Neuer (211 Clean Sheets)</p>
+                                    <img class="record" src="assets/images/Gloves.png" alt="Gloves">
+                                    <p class="club-legend">Manuel Neuer <b>(211 Clean Sheets)</b></p>
                                 </div>
                                 <div class="wrapper">
-                                    <img src="assets/images/Assists.png" width="25" height="23" alt="bayern">
-                                    <p>Thomas Müller (152 Assists)</p>
+                                    <img class="record" src="assets/images/Assists.png" alt="Assists">
+                                    <p class="club-legend">Thomas Müller <b>(152 Assists)</b></p>
                                 </div>
                                 <div class="wrapper">
-                                    <img src="assets/images/MostGames.png" width="25" height="23" alt="bayern">
-                                    <p>Sepp Maier (700 Played Games)</p>
+                                    <img class="record" src="assets/images/MostGames.png" alt="Appereances">
+                                    <p class="club-legend last-legend">Sepp Maier <b>(700 Games)</b></p>
                                 </div>
                             </div>
-                            <div class="col col-6" id="second">
+                            <div class="col col-5">
                                 <p>Stadium: <b>Allianz Arena</b></p>
                                 <p>Capacity: <b>75,000</b></p>
                                 <img id="stadium" src="assets/images/AllianzArenaStadium.png" width="150" alt="munich"><br>
-                                <img src="assets/images/Deutschland.png" width="150" alt="munich">
+                                <img id="country" src="assets/images/Deutschland.png"  alt="munich">
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 honors-facts" id="third">
+                    <div class="col-3 honors-facts bayern-honors">
                         <p class="diamonds"><b>Honors</b><p>
                             <div class="row">
                                 <div class="col-4">
-                                <img src="assets/images/Bundes.png" height="30" alt="Bundesliga">
+                                <img src="assets/images/Bundes.png" height="40" alt="Bundesliga">
                                 </div>
                                 <div class="col-4">
-                                <img src="assets/images/Pokal.png" height="30" alt="Forest">
+                                <img src="assets/images/Pokal.png" height="40" alt="DFPokal">
                                 </div>
                                 <div class="col-4">
-                                <img src="assets/images/DeutschSC.png" height="30" alt="Mountains">
+                                <img src="assets/images/DeutschSC.png" height="40" alt="GermanSC">
                                 </div>
                             </div>
                             <div class="row titleCount">
@@ -83,13 +83,13 @@
                             </div>
                             <div class="row">
                                 <div class="col-4">
-                                <img src="assets/images/UCL.png" height="30"alt="Snow">
+                                <img src="assets/images/UCL.png" height="40"alt="UCL">
                                 </div>
                                 <div class="col-4">
-                                <img src="assets/images/EUSC.png" height="30" alt="Forest">
+                                <img src="assets/images/EUSC.png" height="40" alt="SuperCup">
                                 </div>
                                 <div class="col-4">
-                                <img src="assets/images/ClubWC.png" height="30" alt="Mountains">
+                                <img src="assets/images/ClubWC.png" height="40" alt="ClubWC">
                                 </div>
                             </div>
                             <div class="row titleCount">
@@ -113,23 +113,119 @@
                 </div>
             </div>
         </li>
+        <!-- REAL MADRID -->
         <li class="visible">
-            <div class="container">
-                <h1>My Name</h1>
+            <div id="real-madrid" class="container real-madrid-container">
+                <div class="row">
+                    <div class="col col-9">
+                        <div class="wrapper">
+                            <img id="club-logo" class="madrid-logo" src="assets/images/RealMadridEscudo.png" alt="realm">
+                            <h4 id="team-title" class="madrid-title">REAL MADRID CF</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col col-7">
+                                <b><p>Club Information<p></b>
+                                <p>Foundation: <b>06 March 1902</b></p>
+                                <p>President: <b>Florentino Pérez</b></p>
+                                <p>Owner(s): <b>93,920 partners</b></p>
+                                <p>Head Coach: <b>Carlo Ancelotti</b></p>
+                                <p>Competition:  <img src="assets/images/LaLiga.png" width="15" height="18" alt="La Liga"></p>
+                                <p>Colors: <i class="fa-solid fa-square madrid-first-color"></i> <i class="fa-solid fa-square madrid-second-color"></i></p><br>
+                                
+                                <b><p>Club Record Breakers<p></b>
+                                <div class="wrapper">
+                                    <img class="record" src="assets/images/Ball.png" alt="Scorer">
+                                    <p class="club-legend">Cristiano Ronaldo <b>(451 goals)</b></p>
+                                </div>
+                                <div class="wrapper">
+                                    <img class="record" src="assets/images/Gloves.png" alt="Gloves">
+                                    <p class="club-legend">Iker Casillas <b>(272 Clean Sheets)</b></p>
+                                </div>
+                                <div class="wrapper">
+                                    <img class="record" src="assets/images/Assists.png" alt="Assists">
+                                    <p class="club-legend">Karim Benzema <b>(160 Assists)</b></p>
+                                </div>
+                                <div class="wrapper">
+                                    <img class="record" src="assets/images/MasJugados.png" alt="Appereances">
+                                    <p class="club-legend last-legend">Raúl González <b>(741 Games)</b></p>
+                                </div>
+                            </div>
+                            <div class="col col-5">
+                                <p>Stadium: <b>Santiago Bernabeu</b></p>
+                                <p>Capacity: <b>75,000</b></p>
+                                <img id="stadium" src="assets/images/SantiagoBernabeu.png" width="150" alt="Bernabeu"><br>
+                                <img id="spain" src="assets/images/Madrid.png" alt="munich">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 honors-facts madrid-honors">
+                        <p class="diamonds"><b>Honors</b><p>
+                            <div class="row">
+                                <div class="col-4">
+                                <img src="assets/images/TrofeoLaLiga.png" height="40" alt="La Liga">
+                                </div>
+                                <div class="col-4">
+                                <img src="assets/images/CopaDelRey.png" height="40" alt="Copa Del Rey">
+                                </div>
+                                <div class="col-4">
+                                <img src="assets/images/SCESP.png" height="40" alt="Super Copa de España">
+                                </div>
+                            </div>
+                            <div class="row titleCount">
+                                <div class="col-4">
+                                    <p>35x</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>19x</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>12x</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/images/UCL.png" height="40"alt="UCL">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/images/ClubWC.png" height="40" alt="ClubWC">
+                                </div>
+                                <div class="col-4">
+                                    <img src="assets/images/EUSC.png" height="40" alt="SuperCup">
+                                </div>
+                            </div>
+                            <div class="row titleCount">
+                                <div class="col-4">
+                                    <p>14x</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>7x</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>5x</p>
+                                </div>
+                            </div>
+                        <b><p class="diamonds">Did You Know?</p></b>
+                        <div class="row">
+                            <p class="box">The 50 goals have to go somewhere' – 
+                            Kimmich hopes Bayern can share 
+                            attacking burden after Lewandowski exit</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="visible">
-            <div class="container">
+            <div id="manchester-city" class="container">
                 <h1>Is Raul</h1>
             </div>
         </li>
         <li class="visible">
-            <div class="container">
+            <div id="liverpool" class="container">
                 <h1>Nice to</h1>
             </div>
         </li>
         <li class="visible">
-            <div class="container">
+            <div id="barcelona" class="container">
                 <h1>Meet You</h1>
             </div>
         </li>

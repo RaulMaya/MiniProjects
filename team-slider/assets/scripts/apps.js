@@ -22,10 +22,21 @@ function nextSlide() {
         listItem.classList.toggle('visible');
         listItem.nextElementSibling.classList.toggle('visible');
         listItem = listItem.nextElementSibling;
+        const team = listItem.getElementsByClassName('container')[0]['id']
+        switch(team) {
+            case 'real-madrid':
+                document.body.style.backgroundColor = 'white'
+                break;
+            case 'barcelona':
+                document.body.style.backgroundColor = 'blue'
+                break;
+        }
+        console.log(listItem.getElementsByClassName('container')[0]['id'])
     } else {
         listItem.classList.toggle('visible');
         listItem = myList.firstElementChild;
         listItem.classList.toggle('visible');
+        console.log(listItem.getElementsByClassName('container'))
     }
 
 }
