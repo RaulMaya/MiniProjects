@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
 
 body {
-    background-color: #EB1D36;
+    background-color: white;
 }
 
 .visible {
     display:none
 }
 
-ul {
-    list-style: none;
-    min-height: 100vh;
+.content {
+    min-height: calc(100vh - 10rem);
     display: grid;
     place-items: center;
+}
+
+.team-list {
+    list-style: none;
+    width:fit-content;
+    padding-top: 50px;
+    margin: auto;
 }
 
 .container {
@@ -163,3 +169,24 @@ p {
     color: #8d77ab;
 }
 
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: x-large;
+    color: darkblue;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity:0.75; 
+}

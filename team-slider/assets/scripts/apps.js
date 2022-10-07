@@ -1,9 +1,10 @@
 const frontBtn = document.getElementById('front');
 const backBtn = document.getElementById('back');
-const myList= document.querySelector('ul');
+const myList= document.getElementsByClassName('team-list')[0];
 let listItem = myList.firstElementChild
 const listLength = myList.querySelectorAll('li').length
 let i = 0;
+
 
 const listItems = myList.querySelectorAll('li')
 const arrayList = Array.from(listItems)
@@ -25,10 +26,13 @@ function nextSlide() {
         const team = listItem.getElementsByClassName('container')[0]['id']
         switch(team) {
             case 'real-madrid':
-                document.body.style.backgroundColor = 'white'
+                /* document.body.style.backgroundColor = 'white' */
                 break;
             case 'barcelona':
-                document.body.style.backgroundColor = 'blue'
+                /* document.body.style.backgroundColor = 'blue' */
+                break;
+            case 'bayern-munich':
+               /*  document.body.style.backgroundColor = 'red' */
                 break;
         }
         console.log(listItem.getElementsByClassName('container')[0]['id'])
@@ -36,7 +40,19 @@ function nextSlide() {
         listItem.classList.toggle('visible');
         listItem = myList.firstElementChild;
         listItem.classList.toggle('visible');
-        console.log(listItem.getElementsByClassName('container'))
+        const team = listItem.getElementsByClassName('container')[0]['id']
+        switch(team) {
+            case 'real-madrid':
+                document.body.style.backgroundColor = 'white'
+                break;
+            case 'barcelona':
+                document.body.style.backgroundColor = 'blue'
+                break;
+            case 'bayern-munich':
+                document.body.style.backgroundColor = 'red'
+                break;
+        }
+        
     }
 
 }
