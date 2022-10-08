@@ -36,10 +36,46 @@ body {
 }
 
 .real-madrid-container {
-    color: black;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://wallpapercave.com/wp/wp9213027.jpg");
+    color: white;
+    background: linear-gradient(#8d77abc3, rgba(255, 255, 255, 0.486)), url("https://wallpapercave.com/wp/wp9213027.jpg");
     background-size: cover;
     box-shadow: rgba(205, 205, 205, 0.562) 0px 3px 8px;
+}
+
+
+.manchester-city-container {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(137, 229, 255, 0.634), rgba(255, 255, 255, 0.4)), url("../images/Ethihad.jpeg");
+    background-size: cover;
+    box-shadow: rgba(57, 215, 255, 0.562) 0px 3px 8px;
+}
+
+.newcastle-container {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.4)), url("../images/StJames.png");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 3px 8px;
+}
+
+.barcelona-container {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(8, 0, 126, 0.3), rgba(255, 0, 0, 0.30)), url("../images/CampNou.jpg");
+    background-size: cover;
+    box-shadow: rgba(198, 0, 0, 0.562) 0px 3px 8px;
+}
+
+.roma-container {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(123, 0, 0, 0.579), rgba(222, 67, 0, 0.571)), url("https://www.turismoroma.it/sites/default/files/Foto%20Pixabay%2012%20maggio%20Marco%20Pomella_0.jpg");
+    background-size: cover;
+    box-shadow: rgba(123, 0, 0, 0.579) 0px 3px 8px;
+}
+
+.betis-container {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(17, 168, 12, 0.5), rgba(255, 255, 255, 0.571)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Estadio_Benito_Villamar%C3%ADn_2018001.jpg/800px-Estadio_Benito_Villamar%C3%ADn_2018001.jpg");
+    background-size: cover;
+    box-shadow: rgba(17, 168, 12, 0.5) 0px 3px 8px;
 }
 
 
@@ -67,6 +103,26 @@ body {
     background-color: white;
 }
 
+.manchestercity-logo {
+    background-color: white;
+}
+
+.newcastle-logo {
+    background-color: white;
+}
+
+.barcelona-logo {
+    background-color: darkblue;
+}
+
+.roma-logo {
+    background-color: rgb(249, 164, 18);
+}
+
+.betis-logo {
+    background-color: white;
+}
+
 #team-title {
     font-size: 1.75rem;
     width: fit-content;
@@ -86,6 +142,31 @@ body {
 .madrid-title{
     color: white;
     background-color: #8d77ab;
+}
+
+.manchestercity-title{
+    color: white;
+    background-color: skyblue;
+}
+
+.newcastle-title{
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+
+.barcelona-title{
+    color: white;
+    background-color: rgb(114, 0, 0);
+}
+
+.roma-title{
+    color: white;
+    background-color: rgb(114, 0, 0);
+}
+
+.betis-title{
+    color: white;
+    background-color: #0BB363;
 }
 
 .club-legend {
@@ -118,6 +199,36 @@ p {
     background-image: url("../images/MadridDesign.png");
     background-size: cover;
     border-left: 3px rgb(255, 255, 255) solid;
+}
+
+.manchestercity-honors {
+    background-image: url("../images/ManCityDesigns.png");
+    background-size: cover;
+    border-left: 3px rgb(255, 255, 255) solid;
+}
+
+.newcastle-honors {
+    background-image: url("../images/NewCastle.png");
+    background-size: cover;
+    border-left: 3px rgb(255, 255, 255) solid;
+}
+
+.barcelona-honors {
+    background-image: url("../images/FCBarcaDesign.png");
+    background-size: cover;
+    border-left: 3px darkblue solid;
+}
+
+.roma-honors {
+    background-image: url("../images/RomaDesign.png");
+    background-size: cover;
+    border-left: 3px rgb(249, 164, 18) solid;
+}
+
+.betis-honors {
+    background-image: url("../images/BetisDesign.png");
+    background-size: cover;
+    border-left: 3px #0BB363 solid;
 }
 
 .diamonds {
@@ -166,8 +277,45 @@ p {
 }
 
 .madrid-second-color {
-    color: #8d77ab;
+    color: 
+    #8d77ab;
 }
+
+.newcastle-first-color {
+    color: black;
+}
+
+.newcastle-second-color {
+    color: white;
+}
+
+.barcelona-first-color {
+    color: rgb(114, 0, 0);;
+}
+
+.barcelona-second-color {
+    color: darkblue;
+
+}
+
+.roma-first-color {
+    color: rgb(114, 0, 0);
+}
+
+.roma-second-color {
+    color: rgb(249, 164, 18);
+}
+
+.betis-first-color {
+    color: #0BB363(114, 0, 0);
+}
+
+.roma-second-color {
+    color: white;
+}
+
+
+
 
 .btn-wrapper {
     display: flex;
