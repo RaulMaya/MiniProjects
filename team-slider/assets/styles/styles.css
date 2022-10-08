@@ -9,6 +9,7 @@ body {
 }
 
 .content {
+    position: fixed;
     min-height: calc(100vh - 10rem);
     display: grid;
     place-items: center;
@@ -37,7 +38,7 @@ body {
 
 .real-madrid-container {
     color: white;
-    background: linear-gradient(#8d77abc3, rgba(255, 255, 255, 0.486)), url("https://wallpapercave.com/wp/wp9213027.jpg");
+    background: linear-gradient(#8d77abc3, #8d77abba), url("https://wallpapercave.com/wp/wp9213027.jpg");
     background-size: cover;
     box-shadow: rgba(205, 205, 205, 0.562) 0px 3px 8px;
 }
@@ -211,6 +212,7 @@ p {
     background-image: url("../images/NewCastle.png");
     background-size: cover;
     border-left: 3px rgb(255, 255, 255) solid;
+    color: red
 }
 
 .barcelona-honors {
@@ -229,6 +231,7 @@ p {
     background-image: url("../images/BetisDesign.png");
     background-size: cover;
     border-left: 3px #0BB363 solid;
+    color: black;
 }
 
 .diamonds {
@@ -279,6 +282,14 @@ p {
 .madrid-second-color {
     color: 
     #8d77ab;
+}
+
+.manchestercity-first-color {
+    color: skyblue;
+}
+
+.manchestercity-second-color {
+    color: white;
 }
 
 .newcastle-first-color {
@@ -337,4 +348,15 @@ button {
 
 button:hover {
     opacity:0.75; 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0400e6,
+     0 0 40px #0036e6, 0 0 50px #0008e6, 0 0 60px #0008e6, 0 0 70px #0017e6;
 }
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
