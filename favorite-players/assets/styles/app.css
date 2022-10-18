@@ -28,16 +28,16 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #ff0062;
+  border-color: #0800ff;
 }
 
 button {
   font: inherit;
-  border: 1px solid #ff0062;
+  border: 1px solid #0800ff;
   color: white;
   padding: 1rem 2rem;
   border-radius: 5px;
-  background: #ff0062;
+  background: #0800ff;
   cursor: pointer;
 }
 
@@ -47,8 +47,8 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #ff3482;
-  border-color: #ff3482;
+  background: #0800ff;
+  border-color: #0800ff;
 }
 
 .card {
@@ -66,26 +66,26 @@ button:active {
 }
 
 #user-input,
-#movie-list,
+#player-list,
 #filter {
   width: 50rem;
   max-width: 90%;
   margin: 2rem auto;
 }
 
-#movie-list {
+#player-list {
   display: none;
   list-style: none;
   padding: 1rem;
 }
 
-#movie-list.visible {
+#player-list.visible {
   display: block;
 }
 
-#movie-list li {
+#player-list li {
   margin: 1rem;
-  color: #ff0062;
+  color: #120f5f;
   font-weight: bold;
   font-size: 1.5rem;
 }
