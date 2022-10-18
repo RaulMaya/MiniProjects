@@ -10,13 +10,17 @@ const addPlayerBtn = addSection.querySelector('button');
 const searchBtn = filterSection.querySelector('button');
 
 
-const renderPlayer = () => {
+const renderPlayer = (filter = '') => {
     myList.innerHTML = ''
-    playerArr.forEach((player) => {
+    const playersFiltered = !filter
+    ? playerArr
+    : playerArr.filter(player => player.info.playerNameInput.includes(filter))
+
+    playersFiltered.forEach((player) => {
         const newPlayerElement = document.createElement('li');
         outputText = player.info.playerNameInput + ' | ';
         for (const key  in player.info) {
-            if (key != 'playerNameInput') {
+            if (key !== 'playerNameInput') {
                 outputText = outputText + key +': '+player.info[key]
             }
         }
@@ -57,17 +61,9 @@ const addFunction = () => {
 
 const searchFunction = () => {
     const filterInput = filterSection.querySelector('input').value;
+    renderPlayer(filterInput)
 
-    const searcheadData = playerArr.find((movie, index, playerArr) => {
-        return movie.info.playerNameInput === filterInput;
-    })
-    console.log(searcheadData)
-    const searcheadDataTwo = playerArr.findIndex((movie, index, playerArr) => {
-        return movie.info.playerNameInput === filterInput;
-    })
-    console.log(playerArr[searcheadDataTwo])
-
-    console.log(playerArr.info.includes(filterInput))
+    
 }
 
 
