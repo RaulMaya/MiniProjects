@@ -14,14 +14,21 @@ const renderPlayer = (filter = '') => {
     myList.innerHTML = ''
     const playersFiltered = !filter
     ? playerArr
-    : playerArr.filter(player => player.info.playerNameInput.includes(filter))
+    : playerArr.filter(player => player.info.playerNameInput.includes(filter));
+
+    visibilityActivation(playersFiltered)
 
     playersFiltered.forEach((player) => {
         const newPlayerElement = document.createElement('li');
-        outputText = player.info.playerNameInput + ' | ';
-        for (const key  in player.info) {
-            if (key !== 'playerNameInput') {
-                outputText = outputText + key +': '+player.info[key]
+        if ('info' in player) {
+
+        }
+        const { info, ...otherProps } =  player;
+        const { playerNameInput: playerName }  = info;
+        outputText = playerName + ' | ';
+        for (const key  in info) {
+            if (key !== 'playerNameInput') { 
+                outputText = outputText + key + ': ' + info[key];
             }
         }
         newPlayerElement.textContent = outputText;
@@ -54,7 +61,6 @@ const addFunction = () => {
             }
 
             playerArr.push(playerData);
-            visibilityActivation()
             renderPlayer()
         }
 }
@@ -67,10 +73,10 @@ const searchFunction = () => {
 }
 
 
-const visibilityActivation = () => {
-    if (playerArr.length > 0) {
+const visibilityActivation = (inputArr) => {
+    if (inputArr.length > 0) {
         myList.classList.add('visible')
-    } else if (playerArr.length === 0) {
+    } else if (inputArr.length === 0) {
         myList.classList.remove('visible')    
     }
 }
