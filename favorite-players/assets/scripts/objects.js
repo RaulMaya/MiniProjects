@@ -24,8 +24,10 @@ const renderPlayer = (filter = '') => {
 
         }
         const { info, ...otherProps } =  player;
-        const { playerNameInput: playerName }  = info;
-        outputText = playerName + ' | ';
+        // const { playerNameInput: playerName }  = info;
+        const { getPlayerName } = player
+        let outputText = getPlayerName.call(player) + ' | ';
+        // let outputText = getPlayerName.apply(player) + ' | ';
         for (const key  in info) {
             if (key !== 'playerNameInput') { 
                 outputText = outputText + key + ': ' + info[key];
@@ -57,7 +59,10 @@ const addFunction = () => {
                     playerNameInput,
                     [position]: overall
                 },
-                id: Math.random()
+                id: Math.random(),
+                getPlayerName() { // Dont use arrow functions
+                    return this.info.playerNameInput.toUpperCase();
+                }
             }
 
             playerArr.push(playerData);
