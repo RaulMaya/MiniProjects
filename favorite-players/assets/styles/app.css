@@ -31,13 +31,19 @@ input:focus {
   border-color: #0800ff;
 }
 
+#buttons {
+  align-items: center;
+  text-align: center;
+  padding-top: 12px;
+}
+
 button {
-  font: inherit;
+  border-radius: 10px;
   border: 1px solid #0800ff;
   color: white;
   padding: 1rem 2rem;
-  border-radius: 5px;
-  background: #0800ff;
+  width: fit-content;
+  background: #5276ad;
   cursor: pointer;
 }
 
