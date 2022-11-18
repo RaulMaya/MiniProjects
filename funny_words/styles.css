@@ -1,44 +1,70 @@
 /* Properties for other selectors */
 * {
-    padding: 0;
-    margin: 0;
-    color: rgb(163, 50, 69);
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .container {
-    min-height: 100vh;
-    background-color: rgb(230, 230, 230);
-  }
-  
-  .letters {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 60px;
-  }
-  
-  /* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
-  .letters p {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style: none;
+}
+
+nav {
+    background-color: black;
+    border-bottom: 3px solid yellow;
+    color: wheat;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a, .contact {
+    display: inline-block;
     text-align: center;
-    background-color: rgb(228, 226, 255);
-    width: 70px;
-    margin-right: 1rem;
-    border-radius: 15%;
-    border-color: rgb(204, 9, 9);
-    border-style: solid;
+    padding: 14px 16px;
+    color: wheat;
+    text-decoration: none;
   }
-  
-  .letters:hover p:nth-child(even) {
-    transform: rotateY(720deg);
-    transition: 5s;
-  
+
+.contact-info {
+    display: none;
+}
+
+.contact-dd:hover .contact-info  {
+    display: block;
   }
-  
-  .letters:hover p:nth-child(odd) {
-    transform: rotateX(720deg) rotateZ(720deg);
-    transition: 5s;
-  }
-  
+
+.container {
+  min-height: 100vh;
+  background-color: rgb(255, 245, 158);
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+.letters p {
+  text-align: center;
+  background-color: rgb(255, 243, 72);
+  width: 70px;
+  margin-right: 1rem;
+  border-radius: 15%;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+}
+
+.letters:hover p:nth-child(even) {
+  transform: rotateY(720deg);
+  transition: 5s;
+}
+
+.letters:hover p:nth-child(odd) {
+  transform: rotateX(720deg) rotateZ(720deg);
+  transition: 5s;
+}
